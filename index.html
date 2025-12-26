@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speaking Assessment Report</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="top-navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-brand">Speechace</a>
+            <div class="nav-actions">
+                <a href="#" class="nav-link">
+                    <span class="material-icons-outlined">rate_review</span>
+                    Feedback
+                </a>
+                <a href="#" class="nav-link">
+                    <span class="material-icons-outlined">home</span>
+                    Home
+                </a>
+                <a href="#" class="nav-link">
+                    <span class="material-icons-outlined">mail</span>
+                    Contact
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="certificate-page">
+        <header class="report-header">
+            <h1 class="report-title">Speaking Tests Report</h1>
+        </header>
+
+        <main class="cert-body">
+            <div class="summary-row">
+                <div class="candidate-info">
+                    <h2 id="candidate-name">Loading...</h2>
+                    <div class="meta-row">
+                        <div class="meta-item">
+                            <span class="meta-label">Test Date</span>
+                            <span class="meta-value" id="test-date">...</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Test Type</span>
+                            <span class="meta-value" id="test-type">...</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Certificate ID</span>
+                            <span class="meta-value">SPK-849201</span>
+                        </div>
+                    </div>
+                    <div class="cert-link-section">
+                        <p class="cert-link-label">Link to secure online certificate</p>
+                        <div class="cert-link-row">
+                            <span class="material-icons-outlined cert-lock">lock</span>
+                            <a href="#" class="cert-link">Report for S Rohit</a>
+                            <button class="copy-btn" title="Copy link">
+                                <span class="material-icons-outlined">content_copy</span>
+                            </button>
+                        </div>
+                        <p class="cert-link-note">Note: This link can be shared with others.</p>
+                    </div>
+                </div>
+                <div class="score-display">
+                    <div class="score-bubble">
+                        <span class="score-main" id="overall-score">7</span>
+                        <span class="score-divider">/</span>
+                        <span class="score-max" id="overall-max">9</span>
+                    </div>
+                    <div class="score-label">Overall Score</div>
+                </div>
+            </div>
+
+            <div class="skills-section">
+                <h2 class="section-title">Skills Breakdown</h2>
+                <div id="skills-container"></div>
+            </div>
+
+            <div class="feedback-section">
+                <h2 class="section-title">Descriptive Feedback</h2>
+                <div id="feedback-container"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
